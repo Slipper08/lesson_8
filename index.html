@@ -1,0 +1,176 @@
+<!--&display=swap  нужен для оптимизированной загрузки шрифтов. Вставляется в конце ссылки загрузки шрифта-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Пвсевдодклассы и псевдоэлементы. Lesson 8. Курс Зима 2022</title>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<div class="wrapper">
+			<div class="block-article">
+				<!-- Section 1 -->
+				<div id="section-1" class="page-anchor"></div>
+				<div id="part1" class="block-article block-article-main">
+					<h1>Возможности псевдоклассов и псевдоэлементов</h1>
+					<h2>Псевдоклассы</h2>
+					<p>Состояния - используют для создания эффектов при взаимодействии с ними пользователя.</p>
+					<p>Положения в коде - можно обратиться к любому требуемому элементу в коде и задать ему нужные эффекты. Использую их уже в этом блоке)</p>
+					<p>Псевдоклассы состояния</p>
+					<p>Вообще не понимаю почему в случае списка без обертки div выравнивание перестает работать... Иначе после добавления параграфа в конце выравнивание пропадает. Пришлось добавить div для списка, чтобы всё работало так как надо. Ошибка?</p>
+					<div>
+						<ul class="bam-list">
+							<li><a target="_self" href="#">hover</a></li>
+							<li><a target="_self" href="#">active</a></li>
+							<li><a target="_blank" href="#">visited</a></li>
+						</ul>
+					</div>
+					<p>А смогу ли я повторить историю с отдельными экранами? Вроде как уже. Правда это больше похоже на колхоз. Задал height: 98vh; для нужных блоков.</p>
+					<div class="block-article-main-button">
+						<p>Такс, работаю дальше. Пока что результат мне не очень нравится. Обязательно стану лучше и перестану допускать глупые (и не очень) ошибки.</p>
+						<a href="#section-2" target="_self">Дальше</a>
+					</div>
+				</div>
+				<!-- Section 2 -->
+				<div id="tab-1"></div>
+				<div id="tab-2"></div>
+				<div id="tab-3"></div>
+				<div id="section-2" class="page-anchor"></div>
+				<div class="block-article block-article-tabs">
+					<h2>Попробуем сделать табы? А давай!</h2>
+					<p>Для них также буду использовать Псевдоклассы и псевдоэлементы. В реальности так не делают, но очень хочется)</p>
+					<div class="block-tabs">
+						<a href="#tab-1" target="_self" class="block-tabs tab1">1</a>
+						<a href="#tab-2" target="_self" class="block-tabs tab2">2</a>
+						<a href="#tab-3" target="_self" class="block-tabs tab3">3</a>
+					</div>
+					<div class="block-tabs-body">
+						<div class="body-content-1">
+							<p>Я первый блок</p>
+							Всякая-разная информация. Пока ничего важного.
+						</div>
+						<div class="body-content-2">
+							<p>Я второй блок</p>
+							Всякая-разная информация. Пока ничего важного.
+						</div>
+						<div class="body-content-3">
+							<p>Я третий блок</p>
+							Всякая-разная информация. Пока ничего важного.
+						</div>
+					</div>
+					<div class="block-tabs-footer">
+						<div class="close-button">
+							<a href="#section-2" target="_self">Закрыть табы</a>
+						</div>
+						<div class="back-ahead-buttons">
+							<a href="#section-1">Назад</a>
+							<a href="#section-3">Вперед</a>
+						</div>
+					</div>
+				</div>
+				<!-- Section 3 -->
+				<div id="akkordeon-1"></div>
+				<div id="akkordeon-2"></div>
+				<div id="akkordeon-3"></div>
+				<div id="akkordeon-4"></div>
+				<div id="section-3" class="page-anchor"></div>
+				<div id="part3" class="block-article block-article-akkordeon">
+					<h2>Сделаем что-то вроде аккордеона?</h2>
+					<p>Это должны быть спойлеры, но я пока не умею по-другому. После головоломки с табами это сделать уже не сложно)</p>
+					<div class="block-article-akkordeon-main">
+						<!-- аккордеон 1 -->
+						<a href="#akkordeon-1" target="_self" class="block-article-akkordeon-link">Первая кнопка</a>
+						<div class="block-article-akkordeon-11">Первый блок информации</div>
+						<!-- аккордеон 2 -->
+						<a href="#akkordeon-2" target="_self" class="block-article-akkordeon-link">Вторая кнопка</a>
+						<div class="block-article-akkordeon-12">Второй блок информации</div>
+						<!-- аккордеон 3 -->
+						<a href="#akkordeon-3" target="_self" class="block-article-akkordeon-link">Третья кнопка</a>
+						<div class="block-article-akkordeon-13">Третий блок информации</div>
+						<!-- аккордеон 4 -->
+						<a href="#akkordeon-4" target="_self" class="block-article-akkordeon-link">Четвертая кнопка</a>
+						<div class="block-article-akkordeon-14">Четвертый блок информации</div>
+					</div>
+					<div class="block-akkordeon-footer">
+						<div class="close-button">
+							<a href="#section-3" target="_self">Закрыть табы</a>
+						</div>
+						<div class="back-ahead-buttons">
+							<a href="#section-2">Назад</a>
+							<a href="#section-4">Вперед</a>
+						</div>
+					</div>
+				</div>
+				<!-- Section 4 -->
+				<div id="section-4" class="page-anchor"></div>
+				<div class="block-article block-article-another">
+					<h2>Что-то получилось. Двигаемся дальше!</h2>
+					<p>На случай если захотите вернуться к предыдущим страницам:</p>
+					<div class="another-links">
+						<a class="another-link" href="#section-1" target="_self">В начало работы</a>
+						<a class="another-link" href="#section-2" target="_self">Вернуться к табам</a>
+						<a class="another-link" href="#section-3" target="_self">К аккордеону</a>
+					</div>
+					<p>Что же ещё можно сделать, если использовать псевдокласы и псевдоэлементы?</p>
+					<p>Вероятно наибольшим потенциалом обладает свойство <span class="hover-element">hover</span>. Что же с ним можно сделать?</p>
+					<p>Скрыть блок или ссылку. Opacity:0 сразу пропустим. В этом случае ссылка будет активной, так как она просто становится прозрачной и никуда не девается.</p>
+					<p>Воспользуемся visibility:hidden</p>
+					<div class="section-4-example-link example-link-1">
+						<a>Просто ссылка для демонстрации. У меня нет href</a>
+					</div>
+					<p>Действительно, работает так себе. Постоянно прыгает. Зададим <span class="hover-element">hover</span> родителю и посмотрим что получится.</p>
+					<div class="section-4-example-link example-link-2">
+						<a>Просто ссылка для демонстрации. У меня нет href</a>
+					</div>
+					<p>Другое дело. Работает намного лучше.</p>
+					<p>А еще можно вообще скрыть блок при наведении, использую display:none</p>
+					<div class="section-4-example-link example-link-3">
+						<a>Просто ссылка для демонстрации. У меня нет href</a>
+					</div>
+					<p>Работает не очень. Попытка повесить свойство на родителя или на родителя и ссылку одновременно ни к чему не приводит. Работает также криво. И не ясно где и когда это можно применить. Может в какой-нибудь игре?</p>
+					<p>А что если увеличить или уменьшить блок при наведении? Мы пока не умеем анимировать, но совместно с анимацией получится конфетка.</p>
+					<div class="section-4-example-block example-block-1">Увеличусь</div>
+					<div class="section-4-example-block example-block-2">Уменьшусь</div>
+					<p>Ещё можно сделать через display, но это уже изврат)))</p>
+					<div class="link-figma">
+						<a href="#section-5" target="_self">Перейти к заданиям из Figma</a>
+					</div>
+				</div>
+			</div>
+			<!-- Section 5 -->
+			<div id="section-5" class="page-anchor"></div>
+			<div class="block-part2">
+				<div class="block-part2-first">
+					<p>Who we are</p>
+					<h2>Why Createx?</h2>
+					<ul>
+						<li>A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+						<li>Vulputate placerat amet pulvinar lorem nisl.</li>
+						<li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+						<li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+						<li>Tincidunt sagittis neque sem ac eget.</li>
+						<li>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+					</ul>
+					<div class="block-part2-link">
+						<a href="#section-5">More about us</a>
+					</div>
+				</div>
+				<div class="block-part2-second">
+					<p>Maple Series</p>
+				</div>
+				<div class="last-button-back">
+					<a href="#section-4">Назад</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+</body>
+
+</html>
